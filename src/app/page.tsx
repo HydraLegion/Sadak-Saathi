@@ -1,19 +1,11 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import Link from "next/link";
 import MainLayout from "@/components/layout/MainLayout";
 import { stateData, StateEntry } from "./data";
 import useAuth from "./hooks/useAuth";
 import { Activity, ShieldCheck, MapPin, ChevronRight, FileText } from "lucide-react";
-import { redirect } from "next/navigation";
-
-export default function Home() {
-  // Instantly forwards visitors from the root URL to your dashboard
-  redirect("/user-dashboard");
-}
-
-// IMPORTANT: Here is the import for your new 100% free Firestore uploader!
-import PotholeDatasetUploader from "../components/PotholeDatasetUploader";
 
 export default function Home() {
   useAuth();
@@ -34,7 +26,6 @@ export default function Home() {
       
       {/* Hero Section */}
       <section className="relative overflow-hidden bg-gradient-to-br from-blue-900 via-blue-800 to-indigo-900 rounded-2xl shadow-xl p-8 sm:p-12 mb-8 text-white">
-        {/* Decorative background blur */}
         <div className="absolute top-0 right-0 -mt-10 -mr-10 w-64 h-64 bg-white opacity-10 rounded-full blur-3xl pointer-events-none"></div>
         
         <div className="relative z-10 max-w-3xl">
@@ -45,21 +36,18 @@ export default function Home() {
             Sadak Saathi is a national initiative utilizing automated pothole detection, geotagging, and an intelligent repair workflow to track and resolve road hazards faster than ever.
           </p>
           <div className="flex flex-wrap gap-4">
-            <button className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded-lg font-semibold transition-all shadow-lg flex items-center gap-2">
-              Report a Hazard <Activity size={18} />
-            </button>
+            {/* FIXED: This button now routes cleanly to your new dashboard! */}
+            <Link href="/user-dashboard">
+              <button className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded-lg font-semibold transition-all shadow-lg flex items-center gap-2">
+                Launch Citizen Workspace <Activity size={18} />
+              </button>
+            </Link>
             <button className="bg-white/10 hover:bg-white/20 backdrop-blur-md border border-white/20 text-white px-6 py-3 rounded-lg font-semibold transition-all flex items-center gap-2">
               View Analytics <ChevronRight size={18} />
             </button>
           </div>
         </div>
       </section>
-
-      {/* --- NEW UPLOADER SECTION ADDED HERE --- */}
-      <section className="mb-8">
-        <PotholeDatasetUploader />
-      </section>
-      {/* --------------------------------------- */}
 
       {/* Metrics & Circulars Grid */}
       <section className="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-8">
