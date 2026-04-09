@@ -41,7 +41,7 @@ export default function VideoDetectionPreview({
           setLiveHazards(data.detections);
         }
       } catch (err) {
-        // Silently ignore telemetry fails during timeouts
+        // Silently ignore telemetry fails
       }
     }, 500);
 
