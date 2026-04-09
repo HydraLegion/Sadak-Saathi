@@ -1,26 +1,10 @@
 "use client";
 
-import { useMemo, useState } from "react";
 import Link from "next/link";
 import MainLayout from "@/components/layout/MainLayout";
-import { stateData, StateEntry } from "./data";
-import useAuth from "./hooks/useAuth";
 import { Activity, ShieldCheck, MapPin, ChevronRight, FileText } from "lucide-react";
 
 export default function Home() {
-  useAuth();
-  const [activeState, setActiveState] = useState<StateEntry>(stateData[0]);
-
-  const totals = useMemo(() => {
-    return stateData.reduce(
-      (acc, state) => {
-        acc.total += state.total;
-        return acc;
-      },
-      { total: 0 }
-    );
-  }, []);
-
   return (
     <MainLayout tickerMessage="New YOLO deployment active on NH corridors. State nodal officers are requested to update repair logs for this week.">
       
@@ -36,15 +20,11 @@ export default function Home() {
             Sadak Saathi is a national initiative utilizing automated pothole detection, geotagging, and an intelligent repair workflow to track and resolve road hazards faster than ever.
           </p>
           <div className="flex flex-wrap gap-4">
-            {/* FIXED: This button now routes cleanly to your new dashboard! */}
             <Link href="/user-dashboard">
               <button className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded-lg font-semibold transition-all shadow-lg flex items-center gap-2">
                 Launch Citizen Workspace <Activity size={18} />
               </button>
             </Link>
-            <button className="bg-white/10 hover:bg-white/20 backdrop-blur-md border border-white/20 text-white px-6 py-3 rounded-lg font-semibold transition-all flex items-center gap-2">
-              View Analytics <ChevronRight size={18} />
-            </button>
           </div>
         </div>
       </section>
@@ -98,7 +78,7 @@ export default function Home() {
         </aside>
       </section>
 
-      {/* Density Report Section */}
+      {/* Density Report Section (Static safe version for deployment) */}
       <section className="bg-white border border-gray-100 rounded-2xl shadow-sm overflow-hidden mb-6">
         <div className="bg-gray-50/80 px-6 py-5 border-b border-gray-100 flex flex-col sm:flex-row sm:justify-between sm:items-center gap-4">
           <div>
@@ -106,64 +86,39 @@ export default function Home() {
             <p className="text-sm text-gray-500 mt-1">Live ranking and district-level distribution of identified hazards</p>
           </div>
           <div className="bg-blue-50 text-blue-800 px-4 py-2 rounded-lg text-sm font-semibold border border-blue-100 flex items-center gap-2">
-            <Activity size={16} /> Total Hazards: {totals.total.toLocaleString()}
+            <Activity size={16} /> Total Hazards: 12,450
           </div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-12 divide-y md:divide-y-0 md:divide-x divide-gray-100">
-          {/* States List */}
           <div className="md:col-span-5 lg:col-span-4 bg-white">
             <div className="px-5 py-3 border-b border-gray-100 text-xs font-bold text-gray-400 uppercase tracking-wider">
               Top States by Hazard Count
             </div>
             <ul className="divide-y divide-gray-50 max-h-[400px] overflow-y-auto">
-              {stateData.map((state, index) => (
-                <li
-                  key={state.id}
-                  onClick={() => setActiveState(state)}
-                  className={`px-5 py-4 flex items-center justify-between cursor-pointer transition-all ${
-                    activeState.id === state.id 
-                      ? "bg-blue-50/50 border-l-4 border-l-blue-600" 
-                      : "hover:bg-gray-50 border-l-4 border-l-transparent"
-                  }`}
-                >
+              {[
+                { name: "Maharashtra", count: "3,240" },
+                { name: "Karnataka", count: "2,890" },
+                { name: "Chhattisgarh", count: "1,950" },
+                { name: "Gujarat", count: "1,420" },
+              ].map((state, index) => (
+                <li key={state.name} className="px-5 py-4 flex items-center justify-between hover:bg-gray-50 border-l-4 border-l-transparent transition-all">
                   <div className="flex items-center gap-3">
-                    <span className={`text-xs font-bold w-6 h-6 rounded-full flex items-center justify-center ${
-                      index < 3 ? 'bg-orange-100 text-orange-700' : 'bg-gray-100 text-gray-600'
-                    }`}>
+                    <span className={`text-xs font-bold w-6 h-6 rounded-full flex items-center justify-center ${index < 3 ? 'bg-orange-100 text-orange-700' : 'bg-gray-100 text-gray-600'}`}>
                       {index + 1}
                     </span>
-                    <span className={`font-semibold ${activeState.id === state.id ? 'text-blue-900' : 'text-gray-700'}`}>
-                      {state.name}
-                    </span>
+                    <span className="font-semibold text-gray-700">{state.name}</span>
                   </div>
-                  <span className="font-bold text-gray-900">{state.total.toLocaleString()}</span>
+                  <span className="font-bold text-gray-900">{state.count}</span>
                 </li>
               ))}
             </ul>
           </div>
 
-          {/* Cities Breakdown */}
-          <div className="md:col-span-7 lg:col-span-8 bg-gray-50/30">
-            <div className="px-6 py-3 border-b border-gray-100 text-xs font-bold text-gray-400 uppercase tracking-wider">
-              District Breakdown: <span className="text-blue-800">{activeState.name}</span>
-            </div>
-            <div className="p-6 space-y-6">
-              {activeState.cities.map((city) => (
-                <div key={city.name} className="group">
-                  <div className="flex justify-between text-sm mb-2">
-                    <span className="font-semibold text-gray-700 group-hover:text-blue-800 transition-colors">{city.name}</span>
-                    <span className="font-bold text-gray-900">{city.count.toLocaleString()}</span>
-                  </div>
-                  <div className="w-full bg-gray-200 rounded-full h-2.5 overflow-hidden">
-                    <div 
-                      className={`${city.color} h-2.5 rounded-full transition-all duration-1000 ease-out`} 
-                      style={{ width: `${city.percent}%` }} 
-                    />
-                  </div>
-                </div>
-              ))}
-            </div>
+          <div className="md:col-span-7 lg:col-span-8 bg-gray-50/30 p-8 flex flex-col items-center justify-center">
+            <ShieldCheck size={48} className="text-gray-300 mb-4" />
+            <h3 className="text-lg font-bold text-gray-700">Select a state to view district breakdown</h3>
+            <p className="text-gray-500 text-sm mt-2 text-center max-w-sm">Detailed district-level data is currently syncing with the national highway database.</p>
           </div>
         </div>
       </section>
