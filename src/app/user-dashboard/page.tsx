@@ -9,11 +9,8 @@ import PotholeDatasetUploader from "@/components/PotholeDatasetUploader";
 import { Video, MapPin, AlertTriangle, ShieldCheck, UploadCloud, FileText } from "lucide-react";
 
 export default function UserDashboardPage() {
-  // --- VIDEO STATES ---
   const [videoURL, setVideoURL] = useState<string | null>(null);
   const [detectionLoading, setDetectionLoading] = useState(false);
-  const [detections, setDetections] = useState<unknown[]>([]);
-  const [frames, setFrames] = useState(0);
   const [processedVideoURL, setProcessedVideoURL] = useState<string | null>(null);
 
   useEffect(() => {
@@ -30,20 +27,15 @@ export default function UserDashboardPage() {
     }
     setVideoURL(nextVideoURL);
     setProcessedVideoURL(null);
-    setDetections([]);
-    setFrames(0);
   };
 
   const handleDetectionComplete = (result: DetectionResponse) => {
-    setDetections(Array.isArray(result.detections) ? result.detections : []);
-    setFrames(Number(result.frames ?? 0));
     setProcessedVideoURL(typeof result.processedVideoURL === "string" ? result.processedVideoURL : null);
   };
 
   return (
     <MainLayout tickerMessage="User dashboard active. Upload dashcam footage or GPS datasets to auto-map road hazards.">
       
-      {/* Dashboard Header */}
       <section className="mb-8">
         <h1 className="text-3xl font-extrabold text-gray-900 tracking-tight">Citizen Workspace</h1>
         <p className="text-gray-500 mt-2 text-sm max-w-2xl">
@@ -51,7 +43,6 @@ export default function UserDashboardPage() {
         </p>
       </section>
 
-      {/* Quick Stats Ribbon */}
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-8">
         <div className="bg-white p-5 rounded-2xl border border-gray-100 shadow-sm flex items-center gap-4">
           <div className="w-12 h-12 bg-blue-50 text-blue-600 rounded-full flex items-center justify-center shrink-0">
@@ -84,14 +75,12 @@ export default function UserDashboardPage() {
         </div>
       </div>
 
-      {/* --- 1. VIDEO UPLOAD & PREVIEW GRID --- */}
       <div className="grid grid-cols-1 xl:grid-cols-2 gap-6 mb-6">
         
-        {/* Upload Panel */}
         <div className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col">
           <div className="px-6 py-4 border-b border-gray-100 bg-gray-50/50 flex items-center gap-2">
             <UploadCloud className="text-blue-600" size={20} />
-            <h2 className="text-lg font-bold text-gray-800">1. Upload Video (Local Playback)</h2>
+            <h2 className="text-lg font-bold text-gray-800">1. Upload Video</h2>
           </div>
           <div className="p-6 flex-1 flex flex-col">
             <UploadVideo
@@ -102,7 +91,6 @@ export default function UserDashboardPage() {
           </div>
         </div>
 
-        {/* AI Preview Panel */}
         <div className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col">
           <div className="px-6 py-4 border-b border-gray-100 bg-gray-50/50 flex items-center gap-2">
             <Video className="text-orange-500" size={20} />
@@ -112,15 +100,12 @@ export default function UserDashboardPage() {
             <VideoDetectionPreview
               videoURL={videoURL}
               processedVideoURL={processedVideoURL}
-              detections={detections}
-              frames={frames}
               loading={detectionLoading}
             />
           </div>
         </div>
       </div>
 
-      {/* --- 2. GPS DATASET UPLOADER --- */}
       <div className="mb-6 bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden">
         <div className="px-6 py-4 border-b border-gray-100 bg-gray-50/50 flex items-center gap-2">
           <FileText className="text-blue-600" size={20} />
@@ -131,7 +116,6 @@ export default function UserDashboardPage() {
         </div>
       </div>
 
-      {/* --- 3. LIVE MAP PANEL --- */}
       <div className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden">
         <div className="px-6 py-4 border-b border-gray-100 bg-gray-50/50 flex items-center gap-2">
           <MapPin className="text-green-600" size={20} />
