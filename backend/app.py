@@ -6,23 +6,22 @@ import time
 import logging
 
 app = Flask(__name__)
-# Enable CORS for all routes
 CORS(app, resources={r"/*": {"origins": "*"}})
 
-# 1. SILENCE THE SPAM: Hide the /detection_count logs so we can see real errors!
+# Mute the noisy telemetry polling so you can see real errors in terminal
 log = logging.getLogger('werkzeug')
 class MutePollingFilter(logging.Filter):
     def filter(self, record):
         return '/detection_count' not in record.getMessage()
 log.addFilter(MutePollingFilter())
 
-# 2. ABSOLUTE PATHS: Fixes Windows file-not-found errors
+# Absolute paths to prevent file-not-found issues on Windows
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 UPLOAD_FOLDER = os.path.join(BASE_DIR, "uploads")
 os.makedirs(UPLOAD_FOLDER, exist_ok=True)
 VIDEO_PATH = os.path.join(UPLOAD_FOLDER, "input.mp4")
 
-# Safely import your ML code
+# Safely import ML. If it fails, the stream will still play the raw video.
 try:
     from detector import detect_potholes_in_frame, annotate_frame
     ML_READY = True
@@ -30,7 +29,6 @@ except ImportError as e:
     print(f"\n[WARNING] Could not load detector.py. Stream will play without AI boxes. Error: {e}\n")
     ML_READY = False
 
-# Global state to track live progress
 state = {
     "frames": 0,
     "detections_count": 0
@@ -51,7 +49,6 @@ def upload_video():
     file = request.files["video"]
     file.save(VIDEO_PATH)
     
-    # Reset state for the new video
     state["frames"] = 0
     state["detections_count"] = 0
     
@@ -79,9 +76,8 @@ def generate_frames():
                 break
 
             state["frames"] += 1
-            annotated = frame # Default to raw frame
+            annotated = frame 
 
-            # 3. THE SAFETY NET: Try to run ML, fallback to raw frame if it crashes
             if ML_READY:
                 try:
                     potholes = detect_potholes_in_frame(frame)
@@ -89,9 +85,7 @@ def generate_frames():
                     annotated = annotate_frame(frame, potholes)
                 except Exception as ml_err:
                     print(f"[ML ERROR] detector.py crashed on frame {state['frames']}: {ml_err}")
-                    # We intentionally do NOT break here so the video keeps playing!
             
-            # Encode to JPEG
             ret, buffer = cv2.imencode(".jpg", annotated)
             if not ret:
                 print(f"[ERROR] Failed to encode frame {state['frames']}")
@@ -99,7 +93,7 @@ def generate_frames():
                 
             frame_bytes = buffer.tobytes()
 
-            # Regulator to prevent browser overload (~30 fps)
+            # Regulator to prevent ERR_CONNECTION_RESET
             time.sleep(0.03) 
 
             yield (
