@@ -1,0 +1,346 @@
+[debug] [2026-03-13T18:29:24.431Z] ----------------------------------------------------------------------
+[debug] [2026-03-13T18:29:24.432Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Admin\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2026-03-13T18:29:24.433Z] CLI Version:   15.10.0
+[debug] [2026-03-13T18:29:24.433Z] Platform:      win32
+[debug] [2026-03-13T18:29:24.433Z] Node Version:  v22.21.0
+[debug] [2026-03-13T18:29:24.433Z] Time:          Fri Mar 13 2026 23:59:24 GMT+0530 (India Standard Time)
+[debug] [2026-03-13T18:29:24.433Z] ----------------------------------------------------------------------
+[debug] 
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  D:\Tikesh\E-Summit IIIT\Sadak Saathi\sadak-saathi
+
+[debug] [2026-03-13T18:29:45.337Z] ExitPromptError: User force closed the prompt with SIGINT
+    at Interface.sigint (C:\Users\Admin\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\@inquirer\core\dist\commonjs\lib\create-prompt.js:101:37)
+    at Interface.emit (node:events:519:28)
+    at [_ttyWrite] [as _ttyWrite] (node:internal/readline/interface:1134:18)
+    at ReadStream.onkeypress (node:internal/readline/interface:271:20)
+    at ReadStream.emit (node:events:531:35)
+    at emitKeys (node:internal/readline/utils:370:14)
+    at emitKeys.next (<anonymous>)
+    at ReadStream.onData (node:internal/readline/emitKeypressEvents:64:36)
+    at ReadStream.emit (node:events:519:28)
+    at addChunk (node:internal/streams/readable:561:12)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2026-03-13T18:30:47.820Z] ----------------------------------------------------------------------
+[debug] [2026-03-13T18:30:47.823Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Admin\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2026-03-13T18:30:47.824Z] CLI Version:   15.10.0
+[debug] [2026-03-13T18:30:47.824Z] Platform:      win32
+[debug] [2026-03-13T18:30:47.824Z] Node Version:  v22.21.0
+[debug] [2026-03-13T18:30:47.824Z] Time:          Sat Mar 14 2026 00:00:47 GMT+0530 (India Standard Time)
+[debug] [2026-03-13T18:30:47.824Z] ----------------------------------------------------------------------
+[debug] 
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  D:\Tikesh\E-Summit IIIT\Sadak Saathi\sadak-saathi
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] 
+[debug] [2026-03-13T18:31:42.317Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-03-13T18:31:42.318Z] > authorizing via signed-in user (tikeshs392@gmail.com)
+[debug] [2026-03-13T18:31:42.319Z] Checked if tokens are valid: true, expires at: 1773430134530
+[debug] [2026-03-13T18:31:42.319Z] Checked if tokens are valid: true, expires at: 1773430134530
+[debug] [2026-03-13T18:31:42.320Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2026-03-13T18:31:43.508Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2026-03-13T18:31:43.508Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] 
+=== Dataconnect Setup
+[info] i  dataconnect: ensuring required API firebasedataconnect.googleapis.com is enabled... 
+[debug] [2026-03-13T18:31:46.032Z] Checked if tokens are valid: true, expires at: 1773430134530
+[debug] [2026-03-13T18:31:46.032Z] Checked if tokens are valid: true, expires at: 1773430134530
+[info] i  dataconnect: ensuring required API sqladmin.googleapis.com is enabled... 
+[debug] [2026-03-13T18:31:46.033Z] Checked if tokens are valid: true, expires at: 1773430134530
+[debug] [2026-03-13T18:31:46.033Z] Checked if tokens are valid: true, expires at: 1773430134530
+[debug] [2026-03-13T18:31:46.033Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/sadak-saathi/services/firebasedataconnect.googleapis.com [none]
+[debug] [2026-03-13T18:31:46.033Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/sadak-saathi/services/firebasedataconnect.googleapis.com  x-goog-user-project=sadak-saathi
+[debug] [2026-03-13T18:31:46.034Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/sadak-saathi/services/sqladmin.googleapis.com [none]
+[debug] [2026-03-13T18:31:46.034Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/sadak-saathi/services/sqladmin.googleapis.com  x-goog-user-project=sadak-saathi
+[debug] [2026-03-13T18:31:48.135Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/sadak-saathi/services/sqladmin.googleapis.com 200
+[debug] [2026-03-13T18:31:48.135Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/sadak-saathi/services/sqladmin.googleapis.com [omitted]
+[warn] !  dataconnect: missing required API sqladmin.googleapis.com. Enabling now... 
+[debug] [2026-03-13T18:31:48.136Z] Checked if tokens are valid: true, expires at: 1773430134530
+[debug] [2026-03-13T18:31:48.136Z] Checked if tokens are valid: true, expires at: 1773430134530
+[debug] [2026-03-13T18:31:48.136Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/sadak-saathi/services/sqladmin.googleapis.com:enable [none]
+[debug] [2026-03-13T18:31:48.136Z] >>> [apiv2][(partial)header] POST https://serviceusage.googleapis.com/v1/projects/sadak-saathi/services/sqladmin.googleapis.com:enable  x-goog-user-project=sadak-saathi
+[debug] [2026-03-13T18:31:48.144Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/sadak-saathi/services/firebasedataconnect.googleapis.com 200
+[debug] [2026-03-13T18:31:48.144Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/sadak-saathi/services/firebasedataconnect.googleapis.com [omitted]
+[warn] !  dataconnect: missing required API firebasedataconnect.googleapis.com. Enabling now... 
+[debug] [2026-03-13T18:31:48.145Z] Checked if tokens are valid: true, expires at: 1773430134530
+[debug] [2026-03-13T18:31:48.145Z] Checked if tokens are valid: true, expires at: 1773430134530
+[debug] [2026-03-13T18:31:48.145Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/sadak-saathi/services/firebasedataconnect.googleapis.com:enable [none]
+[debug] [2026-03-13T18:31:48.145Z] >>> [apiv2][(partial)header] POST https://serviceusage.googleapis.com/v1/projects/sadak-saathi/services/firebasedataconnect.googleapis.com:enable  x-goog-user-project=sadak-saathi
+[debug] [2026-03-13T18:31:49.956Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/sadak-saathi/services/sqladmin.googleapis.com:enable 200
+[debug] [2026-03-13T18:31:49.956Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/sadak-saathi/services/sqladmin.googleapis.com:enable [omitted]
+[debug] [2026-03-13T18:31:49.999Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/sadak-saathi/services/firebasedataconnect.googleapis.com:enable 200
+[debug] [2026-03-13T18:31:49.999Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/sadak-saathi/services/firebasedataconnect.googleapis.com:enable [omitted]
+[debug] [2026-03-13T18:32:00.006Z] Checked if tokens are valid: true, expires at: 1773430134530
+[debug] [2026-03-13T18:32:00.006Z] Checked if tokens are valid: true, expires at: 1773430134530
+[debug] [2026-03-13T18:32:00.007Z] >>> [apiv2][query] GET https://firebasedataconnect.googleapis.com/v1/projects/sadak-saathi/locations/-/services [none]
+[debug] [2026-03-13T18:32:02.466Z] <<< [apiv2][status] GET https://firebasedataconnect.googleapis.com/v1/projects/sadak-saathi/locations/-/services 200
+[debug] [2026-03-13T18:32:02.466Z] <<< [apiv2][body] GET https://firebasedataconnect.googleapis.com/v1/projects/sadak-saathi/locations/-/services {}
+[info] i  Learn more about Gemini in Firebase and how it uses your data: https://firebase.google.com/docs/gemini-in-firebase#how-gemini-in-firebase-uses-your-data 
+[info] i  : ensuring required API cloudaicompanion.googleapis.com is enabled... 
+[debug] [2026-03-13T18:32:10.837Z] Checked if tokens are valid: true, expires at: 1773430134530
+[debug] [2026-03-13T18:32:10.837Z] Checked if tokens are valid: true, expires at: 1773430134530
+[debug] [2026-03-13T18:32:10.837Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/sadak-saathi/services/cloudaicompanion.googleapis.com [none]
+[debug] [2026-03-13T18:32:10.838Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/sadak-saathi/services/cloudaicompanion.googleapis.com  x-goog-user-project=sadak-saathi
+[debug] [2026-03-13T18:32:12.650Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/sadak-saathi/services/cloudaicompanion.googleapis.com 200
+[debug] [2026-03-13T18:32:12.650Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/sadak-saathi/services/cloudaicompanion.googleapis.com [omitted]
+[info] +  : required API cloudaicompanion.googleapis.com is enabled 
+[debug] [2026-03-13T18:32:26.248Z] Checked if tokens are valid: true, expires at: 1773430134530
+[debug] [2026-03-13T18:32:26.248Z] Checked if tokens are valid: true, expires at: 1773430134530
+[debug] [2026-03-13T18:32:26.248Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/sadak-saathi/billingInfo [none]
+[debug] [2026-03-13T18:32:28.108Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/sadak-saathi/billingInfo 200
+[debug] [2026-03-13T18:32:28.108Z] <<< [apiv2][body] GET https://cloudbilling.googleapis.com/v1/projects/sadak-saathi/billingInfo {"name":"projects/sadak-saathi/billingInfo","projectId":"sadak-saathi","billingAccountName":"","billingEnabled":false}
+[debug] [2026-03-13T18:32:28.109Z] Checked if tokens are valid: true, expires at: 1773430134530
+[debug] [2026-03-13T18:32:28.109Z] Checked if tokens are valid: true, expires at: 1773430134530
+[debug] [2026-03-13T18:32:28.109Z] >>> [apiv2][query] GET https://monitoring.googleapis.com/v3/projects/sadak-saathi/timeSeries/ filter=metric.type%3D%22serviceruntime.googleapis.com%2Fquota%2Fallocation%2Fusage%22+AND+metric.label.quota_metric+%3D+%22sqladmin.googleapis.com%2Ffdc_lifetime_free_trial_per_project%22&interval.endTime=2026-03-13T18%3A32%3A28.109Z&interval.startTime=2026-03-06T18%3A32%3A28.109Z
+[debug] [2026-03-13T18:32:29.759Z] <<< [apiv2][status] GET https://monitoring.googleapis.com/v3/projects/sadak-saathi/timeSeries/ 200
+[debug] [2026-03-13T18:32:29.759Z] <<< [apiv2][body] GET https://monitoring.googleapis.com/v3/projects/sadak-saathi/timeSeries/ {"unit":"1"}
+[info] +  dataconnect: CloudSQL no cost trial available! 
+[debug] [2026-03-13T18:32:29.760Z] Checked if tokens are valid: true, expires at: 1773430134530
+[debug] [2026-03-13T18:32:29.761Z] Checked if tokens are valid: true, expires at: 1773430134530
+[debug] [2026-03-13T18:32:29.761Z] >>> [apiv2][query] GET https://sqladmin.googleapis.com/v1/projects/sadak-saathi/instances [none]
+[debug] [2026-03-13T18:32:31.170Z] <<< [apiv2][status] GET https://sqladmin.googleapis.com/v1/projects/sadak-saathi/instances 200
+[debug] [2026-03-13T18:32:31.170Z] <<< [apiv2][body] GET https://sqladmin.googleapis.com/v1/projects/sadak-saathi/instances {}
+[debug] [2026-03-13T18:32:31.171Z] Checked if tokens are valid: true, expires at: 1773430134530
+[debug] [2026-03-13T18:32:31.171Z] Checked if tokens are valid: true, expires at: 1773430134530
+[debug] [2026-03-13T18:32:31.171Z] >>> [apiv2][query] GET https://firebasedataconnect.googleapis.com/v1/projects/sadak-saathi/locations [none]
+[debug] [2026-03-13T18:32:32.925Z] <<< [apiv2][status] GET https://firebasedataconnect.googleapis.com/v1/projects/sadak-saathi/locations 200
+[debug] [2026-03-13T18:32:32.925Z] <<< [apiv2][body] GET https://firebasedataconnect.googleapis.com/v1/projects/sadak-saathi/locations {"locations":[{"name":"projects/sadak-saathi/locations/asia-east1","locationId":"asia-east1","displayName":"Taiwan"},{"name":"projects/sadak-saathi/locations/asia-east2","locationId":"asia-east2","displayName":"Hong Kong"},{"name":"projects/sadak-saathi/locations/asia-northeast1","locationId":"asia-northeast1","displayName":"Tokyo"},{"name":"projects/sadak-saathi/locations/asia-northeast2","locationId":"asia-northeast2","displayName":"Osaka"},{"name":"projects/sadak-saathi/locations/asia-northeast3","locationId":"asia-northeast3","displayName":"Seoul"},{"name":"projects/sadak-saathi/locations/asia-south1","locationId":"asia-south1","displayName":"Mumbai"},{"name":"projects/sadak-saathi/locations/asia-southeast1","locationId":"asia-southeast1","displayName":"Singapore"},{"name":"projects/sadak-saathi/locations/asia-southeast2","locationId":"asia-southeast2","displayName":"Jakarta"},{"name":"projects/sadak-saathi/locations/australia-southeast1","locationId":"australia-southeast1","displayName":"Sydney"},{"name":"projects/sadak-saathi/locations/australia-southeast2","locationId":"australia-southeast2","displayName":"Melbourne"},{"name":"projects/sadak-saathi/locations/europe-central2","locationId":"europe-central2","displayName":"Warsaw"},{"name":"projects/sadak-saathi/locations/europe-north1","locationId":"europe-north1","displayName":"Finland"},{"name":"projects/sadak-saathi/locations/europe-southwest1","locationId":"europe-southwest1","displayName":"Madrid"},{"name":"projects/sadak-saathi/locations/europe-west1","locationId":"europe-west1","displayName":"Belgium"},{"name":"projects/sadak-saathi/locations/europe-west2","locationId":"europe-west2","displayName":"London"},{"name":"projects/sadak-saathi/locations/europe-west3","locationId":"europe-west3","displayName":"Frankfurt"},{"name":"projects/sadak-saathi/locations/europe-west4","locationId":"europe-west4","displayName":"Netherlands"},{"name":"projects/sadak-saathi/locations/europe-west6","locationId":"europe-west6","displayName":"Zurich"},{"name":"projects/sadak-saathi/locations/europe-west8","locationId":"europe-west8","displayName":"Milan"},{"name":"projects/sadak-saathi/locations/europe-west9","locationId":"europe-west9","displayName":"Paris"},{"name":"projects/sadak-saathi/locations/me-west1","locationId":"me-west1","displayName":"Tel Aviv"},{"name":"projects/sadak-saathi/locations/northamerica-northeast1","locationId":"northamerica-northeast1","displayName":"Montréal"},{"name":"projects/sadak-saathi/locations/northamerica-northeast2","locationId":"northamerica-northeast2","displayName":"Toronto"},{"name":"projects/sadak-saathi/locations/southamerica-east1","locationId":"southamerica-east1","displayName":"São Paulo"},{"name":"projects/sadak-saathi/locations/southamerica-west1","locationId":"southamerica-west1","displayName":"Santiago"},{"name":"projects/sadak-saathi/locations/us-central1","locationId":"us-central1","displayName":"Iowa"},{"name":"projects/sadak-saathi/locations/us-east1","locationId":"us-east1","displayName":"South Carolina"},{"name":"projects/sadak-saathi/locations/us-east4","locationId":"us-east4","displayName":"Northern Virginia"},{"name":"projects/sadak-saathi/locations/us-south1","locationId":"us-south1","displayName":"Dallas"},{"name":"projects/sadak-saathi/locations/us-west1","locationId":"us-west1","displayName":"Oregon"},{"name":"projects/sadak-saathi/locations/us-west2","locationId":"us-west2","displayName":"Los Angeles"},{"name":"projects/sadak-saathi/locations/us-west3","locationId":"us-west3","displayName":"Salt Lake City"},{"name":"projects/sadak-saathi/locations/us-west4","locationId":"us-west4","displayName":"Las Vegas"}]}
+[info] +  dataconnect: Detected existing apps . (web) 
+[debug] [2026-03-13T18:32:42.276Z] Checked if tokens are valid: true, expires at: 1773430134530
+[debug] [2026-03-13T18:32:42.276Z] Checked if tokens are valid: true, expires at: 1773430134530
+[debug] [2026-03-13T18:32:42.276Z] >>> [apiv2][query] POST https://firebasedataconnect.googleapis.com/v1/projects/sadak-saathi/locations/us-east4/services service_id=sadak-saathi
+[debug] [2026-03-13T18:32:42.276Z] >>> [apiv2][body] POST https://firebasedataconnect.googleapis.com/v1/projects/sadak-saathi/locations/us-east4/services {"name":"projects/sadak-saathi/locations/us-east4/services/sadak-saathi"}
+[debug] [2026-03-13T18:32:45.821Z] <<< [apiv2][status] POST https://firebasedataconnect.googleapis.com/v1/projects/sadak-saathi/locations/us-east4/services 200
+[debug] [2026-03-13T18:32:45.821Z] <<< [apiv2][body] POST https://firebasedataconnect.googleapis.com/v1/projects/sadak-saathi/locations/us-east4/services {"name":"projects/sadak-saathi/locations/us-east4/operations/operation-1773426765005-64cec185d027a-4fa681f1-a00a614d","metadata":{"@type":"type.googleapis.com/google.firebase.dataconnect.v1.OperationMetadata","createTime":"2026-03-13T18:32:46.697208565Z","target":"projects/sadak-saathi/locations/us-east4/services/sadak-saathi","verb":"create","requestedCancellation":false,"apiVersion":"v1"},"done":false}
+[debug] [2026-03-13T18:32:45.823Z] Checked if tokens are valid: true, expires at: 1773430134530
+[debug] [2026-03-13T18:32:45.823Z] Checked if tokens are valid: true, expires at: 1773430134530
+[debug] [2026-03-13T18:32:45.823Z] >>> [apiv2][query] GET https://firebasedataconnect.googleapis.com/v1/projects/sadak-saathi/locations/us-east4/operations/operation-1773426765005-64cec185d027a-4fa681f1-a00a614d [none]
+[debug] [2026-03-13T18:32:46.192Z] <<< [apiv2][status] GET https://firebasedataconnect.googleapis.com/v1/projects/sadak-saathi/locations/us-east4/operations/operation-1773426765005-64cec185d027a-4fa681f1-a00a614d 200
+[debug] [2026-03-13T18:32:46.193Z] <<< [apiv2][body] GET https://firebasedataconnect.googleapis.com/v1/projects/sadak-saathi/locations/us-east4/operations/operation-1773426765005-64cec185d027a-4fa681f1-a00a614d {"name":"projects/sadak-saathi/locations/us-east4/operations/operation-1773426765005-64cec185d027a-4fa681f1-a00a614d","metadata":{"@type":"type.googleapis.com/google.firebase.dataconnect.v1.OperationMetadata","createTime":"2026-03-13T18:32:46.697208565Z","target":"projects/sadak-saathi/locations/us-east4/services/sadak-saathi","verb":"create","requestedCancellation":false,"apiVersion":"v1"},"done":false}
+[debug] [2026-03-13T18:32:46.699Z] [LRO Poller] Retrying task index 0
+[debug] [2026-03-13T18:32:46.700Z] Checked if tokens are valid: true, expires at: 1773430134530
+[debug] [2026-03-13T18:32:46.700Z] Checked if tokens are valid: true, expires at: 1773430134530
+[debug] [2026-03-13T18:32:46.700Z] >>> [apiv2][query] GET https://firebasedataconnect.googleapis.com/v1/projects/sadak-saathi/locations/us-east4/operations/operation-1773426765005-64cec185d027a-4fa681f1-a00a614d [none]
+[debug] [2026-03-13T18:32:47.027Z] <<< [apiv2][status] GET https://firebasedataconnect.googleapis.com/v1/projects/sadak-saathi/locations/us-east4/operations/operation-1773426765005-64cec185d027a-4fa681f1-a00a614d 200
+[debug] [2026-03-13T18:32:47.027Z] <<< [apiv2][body] GET https://firebasedataconnect.googleapis.com/v1/projects/sadak-saathi/locations/us-east4/operations/operation-1773426765005-64cec185d027a-4fa681f1-a00a614d {"name":"projects/sadak-saathi/locations/us-east4/operations/operation-1773426765005-64cec185d027a-4fa681f1-a00a614d","metadata":{"@type":"type.googleapis.com/google.firebase.dataconnect.v1.OperationMetadata","createTime":"2026-03-13T18:32:46.697208565Z","endTime":"2026-03-13T18:32:47.836844152Z","target":"projects/sadak-saathi/locations/us-east4/services/sadak-saathi","verb":"create","requestedCancellation":false,"apiVersion":"v1"},"done":true,"response":{"@type":"type.googleapis.com/google.firebase.dataconnect.v1.Service","name":"projects/sadak-saathi/locations/us-east4/services/sadak-saathi","createTime":"2026-03-13T18:32:46.693274995Z","updateTime":"2026-03-13T18:32:46.693274995Z","uid":"308f2ba8-eed5-4ad5-8662-27973861b606","reconciling":false,"etag":"2WuNItQDiPzI3LgvIahuHkgHe3u7mZEiUb3MlW9V7bY"}}
+[debug] [2026-03-13T18:32:47.033Z] Checked if tokens are valid: true, expires at: 1773430134530
+[debug] [2026-03-13T18:32:47.033Z] Checked if tokens are valid: true, expires at: 1773430134530
+[debug] [2026-03-13T18:32:47.033Z] >>> [apiv2][query] POST https://cloudaicompanion.googleapis.com/v1beta/projects/sadak-saathi/locations/global/instances/default:completeTask [none]
+[debug] [2026-03-13T18:32:47.033Z] >>> [apiv2][body] POST https://cloudaicompanion.googleapis.com/v1beta/projects/sadak-saathi/locations/global/instances/default:completeTask {"input":{"messages":[{"content":"pothole detection","author":"USER"}]},"experienceContext":{"experience":"/appeco/firebase/fdc-schema-generator"}}
+[debug] [2026-03-13T18:32:54.737Z] <<< [apiv2][status] POST https://cloudaicompanion.googleapis.com/v1beta/projects/sadak-saathi/locations/global/instances/default:completeTask 200
+[debug] [2026-03-13T18:32:54.737Z] <<< [apiv2][body] POST https://cloudaicompanion.googleapis.com/v1beta/projects/sadak-saathi/locations/global/instances/default:completeTask {"output":{"messages":[{"content":"```graphql\ntype User @table {\n  displayName: String!\n  createdAt: Timestamp!\n  email: String\n  photoUrl: String\n}\n\ntype PotholeReport @table {\n  latitude: Float!\n  longitude: Float!\n  status: String!\n  createdAt: Timestamp!\n  description: String\n  imageUrl: String\n  updatedAt: Timestamp\n  reporter: User\n}\n\ntype PotholeStatusUpdate @table {\n  status: String!\n  createdAt: Timestamp!\n  notes: String\n  potholeReport: PotholeReport\n  updater: User\n}\n\ntype Comment @table {\n  content: String!\n  createdAt: Timestamp!\n  potholeReport: PotholeReport\n  author: User\n}\n\ntype Verification @table {\n  createdAt: Timestamp!\n  potholeReport: PotholeReport\n  verifier: User\n}\n```\n"}]},"displayContext":{"additionalContext":{"@type":"type.googleapis.com/google.cloud.cloudaicompanion.v1main.FirebaseChatDisplayContext","firebaseFdcDisplayContext":{"schemaSyntaxError":""}}}}
+[debug] [2026-03-13T18:32:54.739Z] Checked if tokens are valid: true, expires at: 1773430134530
+[debug] [2026-03-13T18:32:54.739Z] Checked if tokens are valid: true, expires at: 1773430134530
+[debug] [2026-03-13T18:32:54.739Z] >>> [apiv2][query] PATCH https://firebasedataconnect.googleapis.com/v1/projects/sadak-saathi/locations/us-east4/services/sadak-saathi/schemas/main allowMissing=true&validateOnly=false
+[debug] [2026-03-13T18:32:54.739Z] >>> [apiv2][body] PATCH https://firebasedataconnect.googleapis.com/v1/projects/sadak-saathi/locations/us-east4/services/sadak-saathi/schemas/main {"name":"projects/sadak-saathi/locations/us-east4/services/sadak-saathi/schemas/main","datasources":[{"postgresql":{}}],"source":{"files":[{"path":"schema.gql","content":"type User @table {\n  displayName: String!\n  createdAt: Timestamp!\n  email: String\n  photoUrl: String\n}\n\ntype PotholeReport @table {\n  latitude: Float!\n  longitude: Float!\n  status: String!\n  createdAt: Timestamp!\n  description: String\n  imageUrl: String\n  updatedAt: Timestamp\n  reporter: User\n}\n\ntype PotholeStatusUpdate @table {\n  status: String!\n  createdAt: Timestamp!\n  notes: String\n  potholeReport: PotholeReport\n  updater: User\n}\n\ntype Comment @table {\n  content: String!\n  createdAt: Timestamp!\n  potholeReport: PotholeReport\n  author: User\n}\n\ntype Verification @table {\n  createdAt: Timestamp!\n  potholeReport: PotholeReport\n  verifier: User\n}"}]}}
+[debug] [2026-03-13T18:32:56.613Z] <<< [apiv2][status] PATCH https://firebasedataconnect.googleapis.com/v1/projects/sadak-saathi/locations/us-east4/services/sadak-saathi/schemas/main 200
+[debug] [2026-03-13T18:32:56.614Z] <<< [apiv2][body] PATCH https://firebasedataconnect.googleapis.com/v1/projects/sadak-saathi/locations/us-east4/services/sadak-saathi/schemas/main {"name":"projects/sadak-saathi/locations/us-east4/operations/operation-1773426777451-64cec191aea96-7e3d3c7a-1a63eda4","metadata":{"@type":"type.googleapis.com/google.firebase.dataconnect.v1.OperationMetadata","createTime":"2026-03-13T18:32:57.486196877Z","target":"projects/sadak-saathi/locations/us-east4/services/sadak-saathi/schemas/main","verb":"update","requestedCancellation":false,"apiVersion":"v1"},"done":false}
+[debug] [2026-03-13T18:32:56.614Z] Checked if tokens are valid: true, expires at: 1773430134530
+[debug] [2026-03-13T18:32:56.614Z] Checked if tokens are valid: true, expires at: 1773430134530
+[debug] [2026-03-13T18:32:56.614Z] >>> [apiv2][query] GET https://firebasedataconnect.googleapis.com/v1/projects/sadak-saathi/locations/us-east4/operations/operation-1773426777451-64cec191aea96-7e3d3c7a-1a63eda4 [none]
+[debug] [2026-03-13T18:32:56.997Z] <<< [apiv2][status] GET https://firebasedataconnect.googleapis.com/v1/projects/sadak-saathi/locations/us-east4/operations/operation-1773426777451-64cec191aea96-7e3d3c7a-1a63eda4 200
+[debug] [2026-03-13T18:32:56.998Z] <<< [apiv2][body] GET https://firebasedataconnect.googleapis.com/v1/projects/sadak-saathi/locations/us-east4/operations/operation-1773426777451-64cec191aea96-7e3d3c7a-1a63eda4 {"name":"projects/sadak-saathi/locations/us-east4/operations/operation-1773426777451-64cec191aea96-7e3d3c7a-1a63eda4","metadata":{"@type":"type.googleapis.com/google.firebase.dataconnect.v1.OperationMetadata","createTime":"2026-03-13T18:32:57.486196877Z","endTime":"2026-03-13T18:32:57.698399592Z","target":"projects/sadak-saathi/locations/us-east4/services/sadak-saathi/schemas/main","verb":"update","requestedCancellation":false,"apiVersion":"v1"},"done":true}
+[debug] [2026-03-13T18:32:57.000Z] Checked if tokens are valid: true, expires at: 1773430134530
+[debug] [2026-03-13T18:32:57.000Z] Checked if tokens are valid: true, expires at: 1773430134530
+[debug] [2026-03-13T18:32:57.000Z] Checked if tokens are valid: true, expires at: 1773430134530
+[debug] [2026-03-13T18:32:57.000Z] Checked if tokens are valid: true, expires at: 1773430134530
+[debug] [2026-03-13T18:32:57.000Z] >>> [apiv2][query] POST https://cloudaicompanion.googleapis.com/v1beta/projects/sadak-saathi/locations/global/instances/default:completeTask [none]
+[debug] [2026-03-13T18:32:57.000Z] >>> [apiv2][body] POST https://cloudaicompanion.googleapis.com/v1beta/projects/sadak-saathi/locations/global/instances/default:completeTask {"input":{"messages":[{"content":"Create 4 operations for an app using the instance schema with proper authentication.","author":"USER"}]},"experienceContext":{"experience":"/appeco/firebase/fdc-query-generator"},"clientContext":{"additionalContext":{"@type":"type.googleapis.com/google.cloud.cloudaicompanion.v1main.FirebaseChatRequestContext","fdcInfo":{"fdcServiceName":"projects/sadak-saathi/locations/us-east4/services/sadak-saathi","requiresQuery":true}}}}
+[debug] [2026-03-13T18:32:57.001Z] >>> [apiv2][query] POST https://cloudaicompanion.googleapis.com/v1beta/projects/sadak-saathi/locations/global/instances/default:completeTask [none]
+[debug] [2026-03-13T18:32:57.001Z] >>> [apiv2][body] POST https://cloudaicompanion.googleapis.com/v1beta/projects/sadak-saathi/locations/global/instances/default:completeTask {"input":{"messages":[{"content":"Create a mutation to populate the database with some seed data.","author":"USER"}]},"experienceContext":{"experience":"/appeco/firebase/fdc-query-generator"},"clientContext":{"additionalContext":{"@type":"type.googleapis.com/google.cloud.cloudaicompanion.v1main.FirebaseChatRequestContext","fdcInfo":{"fdcServiceName":"projects/sadak-saathi/locations/us-east4/services/sadak-saathi","requiresQuery":true}}}}
+[debug] [2026-03-13T18:33:01.216Z] <<< [apiv2][status] POST https://cloudaicompanion.googleapis.com/v1beta/projects/sadak-saathi/locations/global/instances/default:completeTask 200
+[debug] [2026-03-13T18:33:01.216Z] <<< [apiv2][body] POST https://cloudaicompanion.googleapis.com/v1beta/projects/sadak-saathi/locations/global/instances/default:completeTask {"output":{"messages":[{"content":"Here are four operations for your app, based on the provided schema and best practices for Firebase Data Connect, including proper authentication and `insecureReason` where applicable.\n\n```graphql\nquery ListAllUsers @auth(level: USER, insecureReason: \"This operation is safe to expose to all logged in users.\") {\n  users {\n    username\n    email\n    avatarUrl\n    bio\n  }\n}\n\nmutation CreateNewUser($username: String!, $email: String!) @auth(level: USER) {\n  user_insert(data: {\n    username: $username,\n    email: $email,\n    createdAt_expr: \"request.time\"\n  }) {\n    uid\n  }\n}\n\nmutation UpdateMyUserBio($bio: String!) @auth(level: USER) {\n  user_update(key: {uid_expr: \"auth.uid\"}, data: {\n    bio: $bio\n  }) {\n    uid\n  }\n}\n\nquery GetMyUser @auth(level: USER) {\n  users(where: {uid: {eq_expr: \"auth.uid\"}}) {\n    username\n    email\n    avatarUrl\n    bio\n    createdAt\n  }\n}\n```\n\nLet's break down these operations:\n\n1.  **`ListAllUsers`**: This query allows any logged-in user to see a list of all other users and their public profile information.\n2.  **`CreateNewUser`**: This mutation allows a new user to register by providing their username and email. The `createdAt` field is automatically populated on the server.\n3.  **`UpdateMyUserBio`**: This mutation allows a logged-in user to update their own biographical information. Notice how `uid_expr: \"auth.uid\"` is used to ensure only the authenticated user can modify their own record.\n4.  **`GetMyUser`**: This query allows a logged-in user to retrieve their own profile details. Similar to the update, `uid_expr: \"auth.uid\"` ensures the user can only fetch their own data.\n\nHere are a few follow-up questions you might consider:\n\n*   How would I implement a query to search for users by their username?\n*   What would a mutation look like to delete a user's account?\n*   How can I add more granular access control, for example, only allowing administrators to see certain user fields?","author":"model"}]},"outputDataContext":{"additionalContext":{"@type":"type.googleapis.com/google.cloud.cloudaicompanion.v1main.ChatOutputDataContext","relatedContent":{}}},"attributionContext":{"citationMetadata":{}}}
+[debug] [2026-03-13T18:33:04.289Z] <<< [apiv2][status] POST https://cloudaicompanion.googleapis.com/v1beta/projects/sadak-saathi/locations/global/instances/default:completeTask 200
+[debug] [2026-03-13T18:33:04.289Z] <<< [apiv2][body] POST https://cloudaicompanion.googleapis.com/v1beta/projects/sadak-saathi/locations/global/instances/default:completeTask {"output":{"messages":[{"content":"```graphql\nmutation CreateDemoData @transaction @auth(level: USER, insecureReason: \"This is a seed data mutation, only to be used internally by authenticated users.\") {\n  user_insertMany(data: [\n    {\n      id: \"550e8400-e29b-41d4-a716-446655440000\",\n      displayName: \"PotholeReporter1\",\n      email: \"reporter1@example.com\",\n      createdAt: \"2023-01-01T10:00:00Z\"\n    },\n    {\n      id: \"550e8400-e29b-41d4-a716-446655440001\",\n      displayName: \"PotholeVerifier1\",\n      email: \"verifier1@example.com\",\n      createdAt: \"2023-01-01T10:05:00Z\"\n    }\n  ])\n  potholeReport_insertMany(data: [\n    {\n      id: \"550e8400-e29b-41d4-a716-446655440002\",\n      latitude: 34.0522,\n      longitude: -118.2437,\n      status: \"Reported\",\n      createdAt: \"2023-01-01T11:00:00Z\",\n      description: \"Large pothole near main street.\",\n      reporterId: \"550e8400-e29b-41d4-a716-446655440000\"\n    },\n    {\n      id: \"550e8400-e29b-41d4-a716-446655440003\",\n      latitude: 34.0533,\n      longitude: -118.2500,\n      status: \"In Progress\",\n      createdAt: \"2023-01-01T12:00:00Z\",\n      description: \"Small crack on residential road.\",\n      reporterId: \"550e8400-e29b-41d4-a716-446655440000\"\n    }\n  ])\n  potholeStatusUpdate_insertMany(data: [\n    {\n      id: \"550e8400-e29b-41d4-a716-446655440004\",\n      potholeReportId: \"550e8400-e29b-41d4-a716-446655440002\",\n      status: \"Reported\",\n      createdAt: \"2023-01-01T11:05:00Z\",\n      notes: \"Initial report received.\"\n    },\n    {\n      id: \"550e8400-e29b-41d4-a716-446655440005\",\n      potholeReportId: \"550e8400-e29b-41d4-a716-446655440003\",\n      status: \"In Progress\",\n      createdAt: \"2023-01-01T12:05:00Z\",\n      notes: \"Repair crew dispatched.\"\n    }\n  ])\n  comment_insertMany(data: [\n    {\n      id: \"550e8400-e29b-41d4-a716-446655440006\",\n      potholeReportId: \"550e8400-e29b-41d4-a716-446655440002\",\n      content: \"This pothole is a real hazard!\",\n      createdAt: \"2023-01-01T11:30:00Z\",\n      authorId: \"550e8400-e29b-41d4-a716-446655440000\"\n    }\n  ])\n  verification_insertMany(data: [\n    {\n      id: \"550e8400-e29b-41d4-a716-446655440007\",\n      potholeReportId: \"550e8400-e29b-41d4-a716-446655440002\",\n      createdAt: \"2023-01-01T13:00:00Z\",\n      verifierId: \"550e8400-e29b-41d4-a716-446655440001\"\n    }\n  ])\n}\n```","author":"model"}]},"outputDataContext":{"additionalContext":{"@type":"type.googleapis.com/google.cloud.cloudaicompanion.v1main.ChatOutputDataContext","relatedContent":{}}},"attributionContext":{"citationMetadata":{}}}
+[info] +  Wrote dataconnect\dataconnect.yaml 
+[info] +  Wrote dataconnect\seed_data.gql 
+[info] +  Wrote dataconnect\schema\schema.gql 
+[info] +  Wrote dataconnect\example\connector.yaml 
+[info] +  Wrote dataconnect\example\queries.gql 
+[info] +  Wrote dataconnect\example\connector.yaml 
+[info] i  dataconnect: Installing the generated SDKs ... 
+[info] i  dataconnect: downloading dataconnect-emulator-3.2.1.exe... {"metadata":{"emulator":{"name":"dataconnect"},"message":"downloading dataconnect-emulator-3.2.1.exe..."}}
+[debug] [2026-03-13T18:33:04.322Z] >>> [apiv2][query] GET https://storage.googleapis.com/firemat-preview-drop/emulator/dataconnect-emulator-windows-amd64-v3.2.1 
+[debug] [2026-03-13T18:33:05.746Z] <<< [apiv2][status] GET https://storage.googleapis.com/firemat-preview-drop/emulator/dataconnect-emulator-windows-amd64-v3.2.1 200
+[debug] [2026-03-13T18:33:05.746Z] <<< [apiv2][body] GET https://storage.googleapis.com/firemat-preview-drop/emulator/dataconnect-emulator-windows-amd64-v3.2.1 [stream]
+[debug] [2026-03-13T18:33:10.467Z] defaultcredentials: writing to file C:\Users\Admin\AppData\Roaming\firebase\tikeshs392_gmail_com_application_default_credentials.json
+[error] !!  dataconnect: Failed to generate Data Connect SDKs
+Command failed with exit code 1 
+[info] +  dataconnect: Installed generated SDKs for . (web) 
+[info] i  Visit https://firebase.google.com/docs/data-connect/web-sdk#react for more information on how to set up React Generated SDKs for Firebase Data Connect 
+[info] 
+=== Firestore Setup
+[info] i  firestore: ensuring required API firestore.googleapis.com is enabled... 
+[debug] [2026-03-13T18:33:13.901Z] Checked if tokens are valid: true, expires at: 1773430134530
+[debug] [2026-03-13T18:33:13.901Z] Checked if tokens are valid: true, expires at: 1773430134530
+[debug] [2026-03-13T18:33:13.901Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/sadak-saathi/services/firestore.googleapis.com [none]
+[debug] [2026-03-13T18:33:13.901Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/sadak-saathi/services/firestore.googleapis.com  x-goog-user-project=sadak-saathi
+[debug] [2026-03-13T18:33:15.739Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/sadak-saathi/services/firestore.googleapis.com 200
+[debug] [2026-03-13T18:33:15.739Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/sadak-saathi/services/firestore.googleapis.com [omitted]
+[warn] !  firestore: missing required API firestore.googleapis.com. Enabling now... 
+[debug] [2026-03-13T18:33:15.740Z] Checked if tokens are valid: true, expires at: 1773430134530
+[debug] [2026-03-13T18:33:15.740Z] Checked if tokens are valid: true, expires at: 1773430134530
+[debug] [2026-03-13T18:33:15.740Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/sadak-saathi/services/firestore.googleapis.com:enable [none]
+[debug] [2026-03-13T18:33:15.740Z] >>> [apiv2][(partial)header] POST https://serviceusage.googleapis.com/v1/projects/sadak-saathi/services/firestore.googleapis.com:enable  x-goog-user-project=sadak-saathi
+[debug] [2026-03-13T18:33:16.259Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/sadak-saathi/services/firestore.googleapis.com:enable 200
+[debug] [2026-03-13T18:33:16.260Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/sadak-saathi/services/firestore.googleapis.com:enable [omitted]
+[debug] [2026-03-13T18:33:26.281Z] Checked if tokens are valid: true, expires at: 1773430134530
+[debug] [2026-03-13T18:33:26.282Z] Checked if tokens are valid: true, expires at: 1773430134530
+[debug] [2026-03-13T18:33:26.282Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/sadak-saathi/databases [none]
+[debug] [2026-03-13T18:33:26.996Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/sadak-saathi/databases 200
+[debug] [2026-03-13T18:33:26.996Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/sadak-saathi/databases {}
+[debug] [2026-03-13T18:33:26.997Z] Checked if tokens are valid: true, expires at: 1773430134530
+[debug] [2026-03-13T18:33:26.997Z] Checked if tokens are valid: true, expires at: 1773430134530
+[debug] [2026-03-13T18:33:26.997Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/sadak-saathi/locations [none]
+[debug] [2026-03-13T18:33:27.382Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/sadak-saathi/locations 200
+[debug] [2026-03-13T18:33:27.382Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/sadak-saathi/locations {"locations":[{"name":"projects/sadak-saathi/locations/eur3","labels":{"appengine.googleapis.com/geo":"europe-west","cloud.googleapis.com/location":"eur3","cloud.googleapis.com/geo":"eur3"},"metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.LocationMetadata"},"locationId":"eur3","displayName":"Europe"},{"name":"projects/sadak-saathi/locations/nam5","labels":{"appengine.googleapis.com/geo":"us-central","cloud.googleapis.com/location":"nam5","cloud.googleapis.com/geo":"nam5"},"metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.LocationMetadata"},"locationId":"nam5","displayName":"United States"},{"name":"projects/sadak-saathi/locations/nam7","labels":{"cloud.googleapis.com/location":"nam7","cloud.googleapis.com/geo":"nam7"},"metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.LocationMetadata"},"locationId":"nam7","displayName":"United States"},{"name":"projects/sadak-saathi/locations/africa-south1","labels":{"cloud.googleapis.com/location":"africa-south1","cloud.googleapis.com/region":"africa-south1"},"metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.LocationMetadata"},"locationId":"africa-south1","displayName":"Johannesburg"},{"name":"projects/sadak-saathi/locations/asia-east1","labels":{"appengine.googleapis.com/region":"asia-east1","cloud.googleapis.com/location":"asia-east1","cloud.googleapis.com/region":"asia-east1"},"metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.LocationMetadata"},"locationId":"asia-east1","displayName":"Taiwan"},{"name":"projects/sadak-saathi/locations/asia-east2","labels":{"appengine.googleapis.com/region":"asia-east2","cloud.googleapis.com/location":"asia-east2","cloud.googleapis.com/region":"asia-east2"},"metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.LocationMetadata"},"locationId":"asia-east2","displayName":"Hong Kong"},{"name":"projects/sadak-saathi/locations/asia-northeast1","labels":{"appengine.googleapis.com/region":"asia-northeast1","cloud.googleapis.com/location":"asia-northeast1","cloud.googleapis.com/region":"asia-northeast1"},"metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.LocationMetadata"},"locationId":"asia-northeast1","displayName":"Tokyo"},{"name":"projects/sadak-saathi/locations/asia-northeast2","labels":{"appengine.googleapis.com/region":"asia-northeast2","cloud.googleapis.com/location":"asia-northeast2","cloud.googleapis.com/region":"asia-northeast2"},"metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.LocationMetadata"},"locationId":"asia-northeast2","displayName":"Osaka"},{"name":"projects/sadak-saathi/locations/asia-northeast3","labels":{"appengine.googleapis.com/region":"asia-northeast3","cloud.googleapis.com/location":"asia-northeast3","cloud.googleapis.com/region":"asia-northeast3"},"metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.LocationMetadata"},"locationId":"asia-northeast3","displayName":"Seoul"},{"name":"projects/sadak-saathi/locations/asia-south1","labels":{"appengine.googleapis.com/region":"asia-south1","cloud.googleapis.com/location":"asia-south1","cloud.googleapis.com/region":"asia-south1"},"metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.LocationMetadata"},"locationId":"asia-south1","displayName":"Mumbai"},{"name":"projects/sadak-saathi/locations/asia-south2","labels":{"cloud.googleapis.com/location":"asia-south2","cloud.googleapis.com/region":"asia-south2"},"metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.LocationMetadata"},"locationId":"asia-south2","displayName":"Delhi"},{"name":"projects/sadak-saathi/locations/asia-southeast1","labels":{"appengine.googleapis.com/region":"asia-southeast1","cloud.googleapis.com/location":"asia-southeast1","cloud.googleapis.com/region":"asia-southeast1"},"metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.LocationMetadata"},"locationId":"asia-southeast1","displayName":"Singapore"},{"name":"projects/sadak-saathi/locations/asia-southeast2","labels":{"appengine.googleapis.com/region":"asia-southeast2","cloud.googleapis.com/location":"asia-southeast2","cloud.googleapis.com/region":"asia-southeast2"},"metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.LocationMetadata"},"locationId":"asia-southeast2","displayName":"Jakarta"},{"name":"projects/sadak-saathi/locations/asia-southeast3","labels":{"cloud.googleapis.com/location":"asia-southeast3","cloud.googleapis.com/region":"asia-southeast3"},"metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.LocationMetadata"},"locationId":"asia-southeast3","displayName":"Bangkok"},{"name":"projects/sadak-saathi/locations/australia-southeast1","labels":{"appengine.googleapis.com/region":"australia-southeast1","cloud.googleapis.com/location":"australia-southeast1","cloud.googleapis.com/region":"australia-southeast1"},"metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.LocationMetadata"},"locationId":"australia-southeast1","displayName":"Sydney"},{"name":"projects/sadak-saathi/locations/australia-southeast2","labels":{"cloud.googleapis.com/location":"australia-southeast2","cloud.googleapis.com/region":"australia-southeast2"},"metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.LocationMetadata"},"locationId":"australia-southeast2","displayName":"Melbourne"},{"name":"projects/sadak-saathi/locations/europe-central2","labels":{"appengine.googleapis.com/region":"europe-central2","cloud.googleapis.com/location":"europe-central2","cloud.googleapis.com/region":"europe-central2"},"metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.LocationMetadata"},"locationId":"europe-central2","displayName":"Warsaw"},{"name":"projects/sadak-saathi/locations/europe-north1","labels":{"cloud.googleapis.com/location":"europe-north1","cloud.googleapis.com/region":"europe-north1"},"metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.LocationMetadata"},"locationId":"europe-north1","displayName":"Finland"},{"name":"projects/sadak-saathi/locations/europe-north2","labels":{"cloud.googleapis.com/location":"europe-north2","cloud.googleapis.com/region":"europe-north2"},"metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.LocationMetadata"},"locationId":"europe-north2","displayName":"Stockholm"},{"name":"projects/sadak-saathi/locations/europe-southwest1","labels":{"cloud.googleapis.com/location":"europe-southwest1","cloud.googleapis.com/region":"europe-southwest1"},"metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.LocationMetadata"},"locationId":"europe-southwest1","displayName":"Madrid"},{"name":"projects/sadak-saathi/locations/europe-west1","labels":{"cloud.googleapis.com/location":"europe-west1","cloud.googleapis.com/region":"europe-west1"},"metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.LocationMetadata"},"locationId":"europe-west1","displayName":"Belgium"},{"name":"projects/sadak-saathi/locations/europe-west10","labels":{"cloud.googleapis.com/location":"europe-west10","cloud.googleapis.com/region":"europe-west10"},"metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.LocationMetadata"},"locationId":"europe-west10","displayName":"Berlin"},{"name":"projects/sadak-saathi/locations/europe-west12","labels":{"cloud.googleapis.com/location":"europe-west12","cloud.googleapis.com/region":"europe-west12"},"metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.LocationMetadata"},"locationId":"europe-west12","displayName":"Turin"},{"name":"projects/sadak-saathi/locations/europe-west2","labels":{"appengine.googleapis.com/region":"europe-west2","cloud.googleapis.com/location":"europe-west2","cloud.googleapis.com/region":"europe-west2"},"metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.LocationMetadata"},"locationId":"europe-west2","displayName":"London"},{"name":"projects/sadak-saathi/locations/europe-west3","labels":{"appengine.googleapis.com/region":"europe-west3","cloud.googleapis.com/location":"europe-west3","cloud.googleapis.com/region":"europe-west3"},"metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.LocationMetadata"},"locationId":"europe-west3","displayName":"Frankfurt"},{"name":"projects/sadak-saathi/locations/europe-west4","labels":{"cloud.googleapis.com/location":"europe-west4","cloud.googleapis.com/region":"europe-west4"},"metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.LocationMetadata"},"locationId":"europe-west4","displayName":"Netherlands"},{"name":"projects/sadak-saathi/locations/europe-west6","labels":{"appengine.googleapis.com/region":"europe-west6","cloud.googleapis.com/location":"europe-west6","cloud.googleapis.com/region":"europe-west6"},"metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.LocationMetadata"},"locationId":"europe-west6","displayName":"Zurich"},{"name":"projects/sadak-saathi/locations/europe-west8","labels":{"cloud.googleapis.com/location":"europe-west8","cloud.googleapis.com/region":"europe-west8"},"metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.LocationMetadata"},"locationId":"europe-west8","displayName":"Milan"},{"name":"projects/sadak-saathi/locations/europe-west9","labels":{"cloud.googleapis.com/location":"europe-west9","cloud.googleapis.com/region":"europe-west9"},"metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.LocationMetadata"},"locationId":"europe-west9","displayName":"Paris"},{"name":"projects/sadak-saathi/locations/me-central1","labels":{"cloud.googleapis.com/location":"me-central1","cloud.googleapis.com/region":"me-central1"},"metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.LocationMetadata"},"locationId":"me-central1","displayName":"Doha"},{"name":"projects/sadak-saathi/locations/me-central2","labels":{"cloud.googleapis.com/location":"me-central2","cloud.googleapis.com/region":"me-central2"},"metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.LocationMetadata"},"locationId":"me-central2","displayName":"Dammam"},{"name":"projects/sadak-saathi/locations/me-west1","labels":{"cloud.googleapis.com/location":"me-west1","cloud.googleapis.com/region":"me-west1"},"metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.LocationMetadata"},"locationId":"me-west1","displayName":"Tel Aviv"},{"name":"projects/sadak-saathi/locations/northamerica-northeast1","labels":{"appengine.googleapis.com/region":"northamerica-northeast1","cloud.googleapis.com/location":"northamerica-northeast1","cloud.googleapis.com/region":"northamerica-northeast1"},"metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.LocationMetadata"},"locationId":"northamerica-northeast1","displayName":"Montréal"},{"name":"projects/sadak-saathi/locations/northamerica-northeast2","labels":{"cloud.googleapis.com/location":"northamerica-northeast2","cloud.googleapis.com/region":"northamerica-northeast2"},"metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.LocationMetadata"},"locationId":"northamerica-northeast2","displayName":"Toronto"},{"name":"projects/sadak-saathi/locations/northamerica-south1","labels":{"cloud.googleapis.com/location":"northamerica-south1","cloud.googleapis.com/region":"northamerica-south1"},"metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.LocationMetadata"},"locationId":"northamerica-south1","displayName":"Mexico"},{"name":"projects/sadak-saathi/locations/southamerica-east1","labels":{"appengine.googleapis.com/region":"southamerica-east1","cloud.googleapis.com/location":"southamerica-east1","cloud.googleapis.com/region":"southamerica-east1"},"metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.LocationMetadata"},"locationId":"southamerica-east1","displayName":"São Paulo"},{"name":"projects/sadak-saathi/locations/southamerica-west1","labels":{"cloud.googleapis.com/location":"southamerica-west1","cloud.googleapis.com/region":"southamerica-west1"},"metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.LocationMetadata"},"locationId":"southamerica-west1","displayName":"Santiago"},{"name":"projects/sadak-saathi/locations/us-central1","labels":{"cloud.googleapis.com/location":"us-central1","cloud.googleapis.com/region":"us-central1"},"metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.LocationMetadata"},"locationId":"us-central1","displayName":"Iowa"},{"name":"projects/sadak-saathi/locations/us-east1","labels":{"appengine.googleapis.com/region":"us-east1","cloud.googleapis.com/location":"us-east1","cloud.googleapis.com/region":"us-east1"},"metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.LocationMetadata"},"locationId":"us-east1","displayName":"South Carolina"},{"name":"projects/sadak-saathi/locations/us-east4","labels":{"appengine.googleapis.com/region":"us-east4","cloud.googleapis.com/location":"us-east4","cloud.googleapis.com/region":"us-east4"},"metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.LocationMetadata"},"locationId":"us-east4","displayName":"Northern Virginia"},{"name":"projects/sadak-saathi/locations/us-east5","labels":{"cloud.googleapis.com/location":"us-east5","cloud.googleapis.com/region":"us-east5"},"metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.LocationMetadata"},"locationId":"us-east5","displayName":"Columbus"},{"name":"projects/sadak-saathi/locations/us-south1","labels":{"cloud.googleapis.com/location":"us-south1","cloud.googleapis.com/region":"us-south1"},"metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.LocationMetadata"},"locationId":"us-south1","displayName":"Dallas"},{"name":"projects/sadak-saathi/locations/us-west1","labels":{"appengine.googleapis.com/region":"us-west1","cloud.googleapis.com/location":"us-west1","cloud.googleapis.com/region":"us-west1"},"metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.LocationMetadata"},"locationId":"us-west1","displayName":"Oregon"},{"name":"projects/sadak-saathi/locations/us-west2","labels":{"appengine.googleapis.com/region":"us-west2","cloud.googleapis.com/location":"us-west2","cloud.googleapis.com/region":"us-west2"},"metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.LocationMetadata"},"locationId":"us-west2","displayName":"Los Angeles"},{"name":"projects/sadak-saathi/locations/us-west3","labels":{"appengine.googleapis.com/region":"us-west3","cloud.googleapis.com/location":"us-west3","cloud.googleapis.com/region":"us-west3"},"metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.LocationMetadata"},"locationId":"us-west3","displayName":"Salt Lake City"},{"name":"projects/sadak-saathi/locations/us-west4","labels":{"appengine.googleapis.com/region":"us-west4","cloud.googleapis.com/location":"us-west4","cloud.googleapis.com/region":"us-west4"},"metadata":{"@type":"type.googleapis.com/google.firestore.admin.v1.LocationMetadata"},"locationId":"us-west4","displayName":"Las Vegas"}]}
+[info] 
+[info] Firestore Security Rules allow you to define how and when to allow
+[info] requests. You can keep these rules in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2026-03-13T18:33:46.949Z] Checked if tokens are valid: true, expires at: 1773430134530
+[debug] [2026-03-13T18:33:46.949Z] Checked if tokens are valid: true, expires at: 1773430134530
+[debug] [2026-03-13T18:33:46.949Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/sadak-saathi/releases pageSize=10&pageToken=
+[debug] [2026-03-13T18:33:48.587Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/sadak-saathi/releases 200
+[debug] [2026-03-13T18:33:48.587Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/sadak-saathi/releases {}
+[info] 
+[info] Firestore indexes allow you to perform complex queries while
+[info] maintaining performance that scales with the size of the result
+[info] set. You can keep index definitions in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2026-03-13T18:33:50.357Z] Checked if tokens are valid: true, expires at: 1773430134530
+[debug] [2026-03-13T18:33:50.357Z] Checked if tokens are valid: true, expires at: 1773430134530
+[debug] [2026-03-13T18:33:50.357Z] Checked if tokens are valid: true, expires at: 1773430134530
+[debug] [2026-03-13T18:33:50.357Z] Checked if tokens are valid: true, expires at: 1773430134530
+[debug] [2026-03-13T18:33:50.357Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/sadak-saathi/databases/(default)/collectionGroups/-/indexes [none]
+[debug] [2026-03-13T18:33:50.358Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/sadak-saathi/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* [none]
+[debug] [2026-03-13T18:33:51.323Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/sadak-saathi/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* 404
+[debug] [2026-03-13T18:33:51.324Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/sadak-saathi/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* {"error":{"code":404,"message":"Project 'sadak-saathi' or database '(default)' does not exist.","status":"NOT_FOUND"}}
+[info] +  Wrote firestore.rules 
+[info] +  Wrote firestore.indexes.json 
+[info] 
+=== Genkit Setup
+[debug] [2026-03-13T18:33:51.348Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/sadak-saathi/databases/(default)/collectionGroups/-/indexes 404
+[debug] [2026-03-13T18:33:51.348Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/sadak-saathi/databases/(default)/collectionGroups/-/indexes {"error":{"code":404,"message":"Project 'sadak-saathi' or database '(default)' does not exist.","status":"NOT_FOUND"}}
+[debug] [2026-03-13T18:34:01.338Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-03-13T18:34:01.338Z] > authorizing via signed-in user (tikeshs392@gmail.com)
+[debug] [2026-03-13T18:34:01.338Z] [iam] checking project sadak-saathi for permissions ["firebase.projects.get"]
+[debug] [2026-03-13T18:34:01.338Z] Checked if tokens are valid: true, expires at: 1773430134530
+[debug] [2026-03-13T18:34:01.338Z] Checked if tokens are valid: true, expires at: 1773430134530
+[debug] [2026-03-13T18:34:01.339Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/sadak-saathi:testIamPermissions [none]
+[debug] [2026-03-13T18:34:01.339Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/sadak-saathi:testIamPermissions  x-goog-user-project=sadak-saathi
+[debug] [2026-03-13T18:34:01.339Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/sadak-saathi:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2026-03-13T18:34:03.018Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/sadak-saathi:testIamPermissions 200
+[debug] [2026-03-13T18:34:03.018Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/sadak-saathi:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2026-03-13T18:34:03.019Z] Checked if tokens are valid: true, expires at: 1773430134530
+[debug] [2026-03-13T18:34:03.019Z] Checked if tokens are valid: true, expires at: 1773430134530
+[debug] [2026-03-13T18:34:03.020Z] Checked if tokens are valid: true, expires at: 1773430134530
+[debug] [2026-03-13T18:34:03.020Z] Checked if tokens are valid: true, expires at: 1773430134530
+[debug] [2026-03-13T18:34:03.020Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/sadak-saathi/services/cloudfunctions.googleapis.com [none]
+[debug] [2026-03-13T18:34:03.020Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/sadak-saathi/services/cloudfunctions.googleapis.com  x-goog-user-project=sadak-saathi
+[debug] [2026-03-13T18:34:03.022Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/sadak-saathi/services/runtimeconfig.googleapis.com [none]
+[debug] [2026-03-13T18:34:03.023Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/sadak-saathi/services/runtimeconfig.googleapis.com  x-goog-user-project=sadak-saathi
+[debug] [2026-03-13T18:34:04.909Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/sadak-saathi/services/runtimeconfig.googleapis.com 200
+[debug] [2026-03-13T18:34:04.909Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/sadak-saathi/services/runtimeconfig.googleapis.com [omitted]
+[debug] [2026-03-13T18:34:04.965Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/sadak-saathi/services/cloudfunctions.googleapis.com 200
+[debug] [2026-03-13T18:34:04.965Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/sadak-saathi/services/cloudfunctions.googleapis.com [omitted]
+[debug] [2026-03-13T18:34:04.965Z] Checked if tokens are valid: true, expires at: 1773430134530
+[debug] [2026-03-13T18:34:04.966Z] Checked if tokens are valid: true, expires at: 1773430134530
+[debug] [2026-03-13T18:34:04.966Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/sadak-saathi/services/cloudfunctions.googleapis.com:enable [none]
+[debug] [2026-03-13T18:34:04.966Z] >>> [apiv2][(partial)header] POST https://serviceusage.googleapis.com/v1/projects/sadak-saathi/services/cloudfunctions.googleapis.com:enable  x-goog-user-project=sadak-saathi
+[debug] [2026-03-13T18:34:05.602Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/sadak-saathi/services/cloudfunctions.googleapis.com:enable 200
+[debug] [2026-03-13T18:34:05.602Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/sadak-saathi/services/cloudfunctions.googleapis.com:enable [omitted]
+[info] Let's create a new codebase for your functions.
+[info] A directory corresponding to the codebase will be created in your project
+[info] with sample code pre-configured.
+
+[info] See https://firebase.google.com/docs/functions/organize-functions for
+[info] more information on organizing your functions using codebases.
+
+[info] Functions can be deployed with firebase deploy.
+
+[info] +  Wrote functions/package.json 
+[info] +  Wrote functions/tsconfig.json 
+[info] +  Wrote functions/src/index.ts 
+[info] +  Wrote functions/.gitignore 
+[info] 
+[info] i  genkit: Installing Genkit CLI version 1.30.1
+ 
+[info] i  genkit: Installing NPM packages for genkit 
+[info] +  genkit: Successfully installed NPM packages 
+[info] i  genkit: Updating tsconfig.json 
+[info] +  genkit: Successfully updated tsconfig.json 
+[info] i  genkit: Updating package.json 
+[info] +  genkit: Successfully updated package.json 
+[info] Telemetry data can be used to monitor and gain insights into your AI features. There may be a cost associated with using this feature. See https://firebase.google.com/docs/genkit/observability/telemetry-collection.
+[info] i  genkit: Generating sample file 
+[info] +  genkit: Successfully generated sample file (src/genkit-sample.ts) 
+[info] 
+[info] 
+Login to Google Cloud using:
+[info]     gcloud auth application-default login --project sadak-saathi
+
+[info] Then start the Genkit developer experience by running:
+[info]     cd functions && npm run genkit:start
+[info] 
+=== Functions Setup
+[debug] [2026-03-13T18:38:21.812Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-03-13T18:38:21.813Z] > authorizing via signed-in user (tikeshs392@gmail.com)
+[debug] [2026-03-13T18:38:21.813Z] [iam] checking project sadak-saathi for permissions ["firebase.projects.get"]
+[debug] [2026-03-13T18:38:21.817Z] Checked if tokens are valid: true, expires at: 1773430134530
+[debug] [2026-03-13T18:38:21.817Z] Checked if tokens are valid: true, expires at: 1773430134530
+[debug] [2026-03-13T18:38:21.819Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/sadak-saathi:testIamPermissions [none]
+[debug] [2026-03-13T18:38:21.819Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/sadak-saathi:testIamPermissions  x-goog-user-project=sadak-saathi
+[debug] [2026-03-13T18:38:21.819Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/sadak-saathi:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2026-03-13T18:38:23.327Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/sadak-saathi:testIamPermissions 200
+[debug] [2026-03-13T18:38:23.327Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/sadak-saathi:testIamPermissions {"permissions":["firebase.projects.get"]}
+[info] 
+Detected existing codebase(s): default
+
+[info] Let's create a new codebase for your functions.
+[info] A directory corresponding to the codebase will be created in your project
+[info] with sample code pre-configured.
+
+[info] See https://firebase.google.com/docs/functions/organize-functions for
+[info] more information on organizing your functions using codebases.
+
+[info] Functions can be deployed with firebase deploy.
+
+[error] Invalid codebase name. Codebase must be less than 64 characters and can contain only lowercase letters, numeric characters, underscores, and dashes.
+[debug] [2026-03-13T18:39:41.027Z] ExitPromptError: User force closed the prompt with SIGINT
+    at Interface.sigint (C:\Users\Admin\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\@inquirer\core\dist\commonjs\lib\create-prompt.js:101:37)
+    at Interface.emit (node:events:519:28)
+    at [_ttyWrite] [as _ttyWrite] (node:internal/readline/interface:1134:18)
+    at ReadStream.onkeypress (node:internal/readline/interface:271:20)
+    at ReadStream.emit (node:events:531:35)
+    at emitKeys (node:internal/readline/utils:370:14)
+    at emitKeys.next (<anonymous>)
+    at ReadStream.onData (node:internal/readline/emitKeypressEvents:64:36)
+    at ReadStream.emit (node:events:519:28)
+    at addChunk (node:internal/streams/readable:561:12)
+[error] 
+[error] Error: An unexpected error has occurred.
