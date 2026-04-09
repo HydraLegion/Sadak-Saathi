@@ -122,4 +122,4 @@ if __name__ == "__main__":
     print("\n" + "="*50)
     print("SADAK-SAATHI FLASK BACKEND STARTED")
     print("="*50 + "\n")
-    app.run(port=5000, debug=True, threaded=True)
+    app.run(port=5000, debug=False, threaded=True)
