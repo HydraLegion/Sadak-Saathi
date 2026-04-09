@@ -5,6 +5,12 @@ import MainLayout from "@/components/layout/MainLayout";
 import { stateData, StateEntry } from "./data";
 import useAuth from "./hooks/useAuth";
 import { Activity, ShieldCheck, MapPin, ChevronRight, FileText } from "lucide-react";
+import { redirect } from "next/navigation";
+
+export default function Home() {
+  // Instantly forwards visitors from the root URL to your dashboard
+  redirect("/user-dashboard");
+}
 
 // IMPORTANT: Here is the import for your new 100% free Firestore uploader!
 import PotholeDatasetUploader from "../components/PotholeDatasetUploader";
