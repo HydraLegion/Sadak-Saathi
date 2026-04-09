@@ -77,6 +77,7 @@ export default function UserDashboardPage() {
 
       <div className="grid grid-cols-1 xl:grid-cols-2 gap-6 mb-6">
         
+        {/* Upload Panel */}
         <div className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col">
           <div className="px-6 py-4 border-b border-gray-100 bg-gray-50/50 flex items-center gap-2">
             <UploadCloud className="text-blue-600" size={20} />
@@ -91,6 +92,7 @@ export default function UserDashboardPage() {
           </div>
         </div>
 
+        {/* AI Preview Panel */}
         <div className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col">
           <div className="px-6 py-4 border-b border-gray-100 bg-gray-50/50 flex items-center gap-2">
             <Video className="text-orange-500" size={20} />
