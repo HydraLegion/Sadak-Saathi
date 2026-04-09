@@ -8,20 +8,17 @@ import logging
 app = Flask(__name__)
 CORS(app, resources={r"/*": {"origins": "*"}})
 
-# Mute the noisy telemetry polling so you can see real errors in terminal
 log = logging.getLogger('werkzeug')
 class MutePollingFilter(logging.Filter):
     def filter(self, record):
         return '/detection_count' not in record.getMessage()
 log.addFilter(MutePollingFilter())
 
-# Absolute paths to prevent file-not-found issues on Windows
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 UPLOAD_FOLDER = os.path.join(BASE_DIR, "uploads")
 os.makedirs(UPLOAD_FOLDER, exist_ok=True)
 VIDEO_PATH = os.path.join(UPLOAD_FOLDER, "input.mp4")
 
-# Safely import ML. If it fails, the stream will still play the raw video.
 try:
     from detector import detect_potholes_in_frame, annotate_frame
     ML_READY = True
@@ -93,7 +90,6 @@ def generate_frames():
                 
             frame_bytes = buffer.tobytes()
 
-            # Regulator to prevent ERR_CONNECTION_RESET
             time.sleep(0.03) 
 
             yield (
