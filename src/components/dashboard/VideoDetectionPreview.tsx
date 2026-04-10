@@ -20,28 +20,36 @@ export default function VideoDetectionPreview({
   
   const [stableStreamUrl, setStableStreamUrl] = useState<string | null>(null);
 
+  // NGROK STREAM INTERCEPTOR
   useEffect(() => {
     if (processedVideoURL) {
-      setStableStreamUrl(`${processedVideoURL}?t=${Date.now()}`);
+      // Force the image tag to pull the live stream from the secure Ngrok URL
+      const ngrokStreamURL = "https://9be3-2405-201-3006-8894-8d59-81b7-3f0d-deab.ngrok-free.app/video_feed";
+      setStableStreamUrl(`${ngrokStreamURL}?t=${Date.now()}`);
       setStreamError(false);
     } else {
       setStableStreamUrl(null);
     }
   }, [processedVideoURL]);
 
+  // NGROK TELEMETRY POLLING
   useEffect(() => {
     if (!processedVideoURL) return;
 
     const interval = setInterval(async () => {
       try {
-        const res = await fetch("http://localhost:5000/detection_count");
+        const res = await fetch("https://9be3-2405-201-3006-8894-8d59-81b7-3f0d-deab.ngrok-free.app/detection_count", {
+          headers: {
+            "ngrok-skip-browser-warning": "true" // CRITICAL: Bypasses Ngrok warning for JSON data
+          }
+        });
         if (res.ok) {
           const data = await res.json();
           setLiveFrames(data.frames);
           setLiveHazards(data.detections);
         }
       } catch (err) {
-        // Silently ignore telemetry fails
+        // Silently ignore telemetry fails during timeouts
       }
     }, 500);
 
@@ -50,7 +58,8 @@ export default function VideoDetectionPreview({
 
   const handleRetryStream = () => {
     setStreamError(false);
-    setStableStreamUrl(`${processedVideoURL}?retry=${Date.now()}`);
+    const ngrokStreamURL = "https://9be3-2405-201-3006-8894-8d59-81b7-3f0d-deab.ngrok-free.app/video_feed";
+    setStableStreamUrl(`${ngrokStreamURL}?retry=${Date.now()}`);
   };
 
   if (!videoURL && !loading) {
@@ -70,7 +79,7 @@ export default function VideoDetectionPreview({
         <div className="absolute inset-0 flex flex-col items-center justify-center text-white z-10">
            <div className="w-12 h-12 border-4 border-orange-500 border-t-transparent rounded-full animate-spin mb-4"></div>
            <h3 className="text-lg font-bold tracking-wide">Starting AI stream...</h3>
-           <p className="text-sm text-gray-400 mt-2">Connecting to Python Backend</p>
+           <p className="text-sm text-gray-400 mt-2">Connecting to Python Backend via Ngrok</p>
         </div>
       </div>
     );
@@ -108,7 +117,7 @@ export default function VideoDetectionPreview({
 
       <div className="bg-green-600 text-white px-4 py-2.5 flex items-center gap-2 text-sm font-bold shadow-md">
         <CheckCircle size={18} />
-        Live Stream Connected — Processing via Flask OpenCV
+        Live Stream Connected — Processing via Flask OpenCV & Ngrok
       </div>
 
       <div className="grid grid-cols-2 gap-4 mt-5">
