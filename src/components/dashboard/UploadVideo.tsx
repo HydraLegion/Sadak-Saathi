@@ -35,12 +35,16 @@ export default function UploadVideo({ onVideoSelected, onDetectionStateChange, o
     formData.append("video", selectedFile);
 
     try {
-      const res = await fetch("http://localhost:5000/upload", {
+      // NGROK URL INTEGRATED HERE WITH SECURITY BYPASS
+      const res = await fetch("https://9be3-2405-201-3006-8894-8d59-81b7-3f0d-deab.ngrok-free.app/upload", {
         method: "POST",
+        headers: {
+          "ngrok-skip-browser-warning": "true" // CRITICAL: Bypasses the Ngrok warning screen
+        },
         body: formData,
       });
 
-      if (!res.ok) throw new Error("Failed to upload to Python backend");
+      if (!res.ok) throw new Error("Failed to upload via Ngrok");
 
       const data = await res.json();
 
@@ -52,7 +56,7 @@ export default function UploadVideo({ onVideoSelected, onDetectionStateChange, o
 
     } catch (err) {
       console.error("Backend Error:", err);
-      alert("Could not connect to Python backend. Is app.py running on port 5000?");
+      alert("Could not connect to Ngrok backend. Is your tunnel and app.py running?");
     } finally {
       onDetectionStateChange(false);
     }
