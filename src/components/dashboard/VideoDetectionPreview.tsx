@@ -20,11 +20,10 @@ export default function VideoDetectionPreview({
   
   const [stableStreamUrl, setStableStreamUrl] = useState<string | null>(null);
 
-  // NGROK STREAM INTERCEPTOR
   useEffect(() => {
     if (processedVideoURL) {
-      // Force the image tag to pull the live stream from the secure Ngrok URL
-      const ngrokStreamURL = "https://9be3-2405-201-3006-8894-8d59-81b7-3f0d-deab.ngrok-free.app/video_feed";
+      // DYNAMIC URL: Uses environment variable for the image stream
+      const ngrokStreamURL = `${process.env.NEXT_PUBLIC_API_URL}/video_feed`;
       setStableStreamUrl(`${ngrokStreamURL}?t=${Date.now()}`);
       setStreamError(false);
     } else {
@@ -32,15 +31,15 @@ export default function VideoDetectionPreview({
     }
   }, [processedVideoURL]);
 
-  // NGROK TELEMETRY POLLING
   useEffect(() => {
     if (!processedVideoURL) return;
 
     const interval = setInterval(async () => {
       try {
-        const res = await fetch("https://9be3-2405-201-3006-8894-8d59-81b7-3f0d-deab.ngrok-free.app/detection_count", {
+        // DYNAMIC URL: Uses environment variable for polling telemetry
+        const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/detection_count`, {
           headers: {
-            "ngrok-skip-browser-warning": "true" // CRITICAL: Bypasses Ngrok warning for JSON data
+            "ngrok-skip-browser-warning": "true" 
           }
         });
         if (res.ok) {
@@ -58,7 +57,7 @@ export default function VideoDetectionPreview({
 
   const handleRetryStream = () => {
     setStreamError(false);
-    const ngrokStreamURL = "https://9be3-2405-201-3006-8894-8d59-81b7-3f0d-deab.ngrok-free.app/video_feed";
+    const ngrokStreamURL = `${process.env.NEXT_PUBLIC_API_URL}/video_feed`;
     setStableStreamUrl(`${ngrokStreamURL}?retry=${Date.now()}`);
   };
 
