@@ -35,11 +35,11 @@ export default function UploadVideo({ onVideoSelected, onDetectionStateChange, o
     formData.append("video", selectedFile);
 
     try {
-      // NGROK URL INTEGRATED HERE WITH SECURITY BYPASS
-      const res = await fetch("https://9be3-2405-201-3006-8894-8d59-81b7-3f0d-deab.ngrok-free.app/upload", {
+      // DYNAMIC URL: Uses your environment variable
+      const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/upload`, {
         method: "POST",
         headers: {
-          "ngrok-skip-browser-warning": "true" // CRITICAL: Bypasses the Ngrok warning screen
+          "ngrok-skip-browser-warning": "true" 
         },
         body: formData,
       });
@@ -56,7 +56,7 @@ export default function UploadVideo({ onVideoSelected, onDetectionStateChange, o
 
     } catch (err) {
       console.error("Backend Error:", err);
-      alert("Could not connect to Ngrok backend. Is your tunnel and app.py running?");
+      alert("Could not connect to backend. Is your Ngrok tunnel and app.py running?");
     } finally {
       onDetectionStateChange(false);
     }
